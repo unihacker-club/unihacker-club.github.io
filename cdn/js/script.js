@@ -1,8 +1,16 @@
-var typed = new Typed('#autotype',{
-    strings: ["UNIPAMPA", "CoffeeHack", "EnglishHack", "CineHack", "TchêHack", "Hackaton", "EscolaHack", "InfoHack", "InterClubHack", "IdentificaHack", "ResolveHack", "InovaHack", "Give me a Macbook ;)"],
+var typed_header = new Typed('#autotype_header',{
+    strings: ["UNIPAMPA", "CoffeeHack", "EnglishHack", "CineHack", "TchêHack", "Hackaton", "EscolaHack", "InfoHack", "InterClubHack", "IdentificaHack", "ResolveHack", "InovaHack"],
     typeSpeed: 75,
     backSpeed: 30,
     loop: true
+});
+
+var typed_logo = new Typed('#autotype_logo',{
+  strings: ["uniHacker"],
+  typeSpeed: 100,
+  loop: false,
+  showCursor: true,
+  cursorChar: '▮',
 });
 
 particlesConfig = {
@@ -75,7 +83,7 @@ particlesConfig = {
       }
     },
     interactivity: {
-      detect_on: 'canvas',
+      detect_on: 'window',
       events: {
         onhover: {
           enable: true,
