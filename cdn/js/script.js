@@ -125,3 +125,9 @@ particlesConfig = {
   }
 
 particlesJS('particles-js', particlesConfig);
+
+$('#equipe [data-toggle=tooltip]').tooltip({
+  template: '<div class="tooltip mb-2" role="tooltip"><div class="arrow arrow-down-tooltip"></div><div class="tooltip-inner tooltip-parallelogram equipe"></div></div>',
+  html: true
+})
+

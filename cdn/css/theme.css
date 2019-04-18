@@ -276,6 +276,7 @@ section#objetivos .feature-item i {
   background: -webkit-gradient(linear, right top, left top, from(var(--theme-primary)), to(var(--theme-primary-tetradic-3)));
   background: linear-gradient(to left, var(--theme-primary), var(--theme-primary-tetradic-3));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -327,6 +328,7 @@ section#equipe .feature-item i {
   background: -webkit-gradient(linear, right top, left top, from(var(--theme-primary)), to(var(--theme-primary-tetradic-3)));
   background: linear-gradient(to left, var(--theme-primary), var(--theme-primary-tetradic-3));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
