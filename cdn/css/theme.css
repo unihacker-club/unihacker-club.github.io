@@ -262,7 +262,6 @@ section#objetivos .device-container {
 
 section#objetivos .feature-item {
   padding-top: 50px;
-  /* padding-bottom: 50px; */
   text-align: center;
 }
 
@@ -277,6 +276,59 @@ section#objetivos .feature-item i {
   background: -webkit-gradient(linear, right top, left top, from(var(--theme-primary)), to(var(--theme-primary-tetradic-3)));
   background: linear-gradient(to left, var(--theme-primary), var(--theme-primary-tetradic-3));
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section#equipe {
+  color: var(--theme-secondary-font);
+  /* background: var(--theme-secondary); */
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+section#equipe .section-heading h2 {
+  margin-top: 0;
+}
+
+section#equipe .section-heading p {
+  margin-bottom: 0;
+}
+
+section#equipe .device-container,
+section#equipe .feature-item {
+  max-width: 325px;
+  margin: 0 auto;
+}
+
+section#equipe .device-container {
+  margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  section#equipe .device-container {
+    margin-bottom: 0;
+  }
+}
+
+section#equipe .feature-item {
+  padding-top: 50px;
+  /* padding-bottom: 50px; */
+  text-align: center;
+}
+
+section#equipe .feature-item h3 {
+  font-size: 30px;
+}
+
+section#equipe .feature-item i {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 15px;
+  background: -webkit-gradient(linear, right top, left top, from(var(--theme-primary)), to(var(--theme-primary-tetradic-3)));
+  background: linear-gradient(to left, var(--theme-primary), var(--theme-primary-tetradic-3));
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

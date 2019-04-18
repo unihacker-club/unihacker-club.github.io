@@ -1,3 +1,7 @@
+$(function() {
+  getPhotoFromGithub()
+})
+
 var typed_header = new Typed('#autotype_header',{
     strings: ["UNIPAMPA", "CoffeeHack", "EnglishHack", "CineHack", "TchêHack", "Hackaton", "EscolaHack", "InfoHack", "InterClubHack", "IdentificaHack", "ResolveHack", "InovaHack"],
     typeSpeed: 75,
@@ -125,3 +129,25 @@ particlesConfig = {
   }
 
 particlesJS('particles-js', particlesConfig);
+
+$('#equipe [data-toggle=tooltip]').tooltip({
+  template: '<div class="tooltip mb-2" role="tooltip"><div class="arrow arrow-down-tooltip"></div><div class="tooltip-inner tooltip-parallelogram equipe"></div></div>',
+  html: true
+})
+
+const getPhotoFromGithub = () => { 
+  $('img[data-github-photo]').each(function() {
+    let githubUser = $(this).data('github-photo');
+
+    if(!githubUser) {
+      return
+    }
+
+    axios.get(`https://api.github.com/users/${githubUser}`)
+    .then(user => {
+      $(this).attr('src', user.data.avatar_url)
+    })
+    .catch(e => {
+    })
+  }) 
+}
