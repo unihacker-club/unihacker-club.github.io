@@ -56,6 +56,7 @@
 
 .equipe-photo {
 	padding-top: 60px;
+	cursor: crosshair;
 }
 
 .circle-bordered {
@@ -242,4 +243,53 @@ p.hint-description {
 
 p.hint-team-name {
 	color: var(--theme-primary);
+}
+
+/* === BIG IMAGE === */
+.big-impact {
+	min-height: 100vh;
+    background: url('../img/partners.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+/* === PARCEIROS === */
+
+#parceiros div.section-heading {
+	padding-top: 60px;
+}
+
+.box-oulined {
+	border: 2px solid var(--theme-primary);
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	text-align: center;
+	width: inherit;
+	height: inherit;
+	margin-top: 20px;
+}
+
+.box-oulined:hover {
+	background: var(--gray-dark)
+}
+
+.box-logo {
+	margin-top: 15px;
+}
+
+.box-partner-name {
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+.box-partner-city {
+	font-size: 12px;
+	margin-top: 0;
 }
