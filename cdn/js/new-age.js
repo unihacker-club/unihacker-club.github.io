@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 48)
+          scrollTop: (target.offset().top - ($('#mainNav').outerHeight() - 2))
         }, 1000, "easeInOutExpo");
         return false;
       }
