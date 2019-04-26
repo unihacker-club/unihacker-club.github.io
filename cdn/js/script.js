@@ -10,7 +10,7 @@ var typed_header = new Typed('#autotype_header',{
 });
 
 var typed_logo = new Typed('#autotype_logo',{
-  strings: ["uniHacker"],
+  strings: ["Clube Universidade Hacker"],
   typeSpeed: 100,
   loop: false,
   showCursor: true,
