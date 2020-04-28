@@ -5,6 +5,15 @@
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+	outline: none !important;
+	box-shadow: none;
+}
+
+*:focus, *:active {
+	outline: 0 !important; 
+	border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 #particles-js {
@@ -33,7 +42,7 @@
 
 	.header-club {
 		height: initial;
-		padding-top: 40vh;
+		padding-top: 30vh;
 	}
 }
 
@@ -252,4 +261,103 @@ p.hint-description {
 
 p.hint-team-name {
 	color: var(--theme-primary);
+}
+
+/** === NOTICIAS === */
+
+section.news {
+	position: relative;
+	width: 100%;
+	color: white;
+	min-height: 60vh;
+	padding: 0 0;
+	display: block;
+}
+
+@media (min-width: 992px) {
+	section.news {
+    /* height: 60vh; */
+    min-height: 70vh;
+    padding-top: 0;
+    padding-bottom: 0;
+	}
+}	
+
+#news-carousel-container {
+	margin-top: 60px;
+}
+
+#news-carousel .carousel-inner{
+	display: flex;
+}
+
+#news-carousel .carousel-inner .carousel-item > div {
+	display: flex;
+	background-color: transparent;
+	width: 80%;
+	margin: auto 10%;
+	justify-content: center;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+.btn:active, .btn:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.theme-primary {
+	color: #fff;
+	background-color: var(--theme-primary);
+	border-color: var(--theme-primary);
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: var(--theme-primary);
+	border-color: var(--theme-primary);
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: var(--theme-primary-hover);
+	border-color: var(--theme-primary-hover);
+}
+
+.btn-primary:focus {
+	color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: var(--theme-primary-hover);
+	border-color: var(--theme-primary-hover);
+}
+
+.bg-theme {
+	background-color: var(--theme-primary) !important;
 }
