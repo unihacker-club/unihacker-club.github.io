@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="cdn/css/style.css">
 
 	<!-- Added Favicon -->
-	<link rel="shortcut icon" type="image/png" href="cdn/img/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="cdn/img/favicon.png" />
 </head>
 
 <body>
@@ -82,9 +82,30 @@
 					<a href="#equipe" class="btn btn-outline btn-md js-scroll-trigger">Equipe</a>
 					<a href="#parceiros" class="btn btn-outline btn-md js-scroll-trigger">Parceiros</a>
 				</div>
+				</div>
 			</div>
 		</div>
 	</header>
+
+	<section class="news">
+		<div class="row mx-0">
+			<div class="col-md-12 d-none" id="news-carousel-container">
+				<div id="news-carousel" data-pause="true" class="carousel slide">
+					<ol class="carousel-indicators" id="news-carousel-indicators">
+					</ol>
+					<div class="carousel-inner" id="news-carousel-items">
+					</div>
+					<a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Próximo</span>
+					</a>
+				</div>
+		</div>
+	</section>
 
 	<section id="objetivos">
 		<div class="container">
@@ -224,8 +245,8 @@
 								title="Diego Kreutz<br />Coordenador">
 								<div class="hint hint-right">
 									<span class="hint-radius"></span>
-									<img src="cdn/img/team/without_photo.jpg" data-github-photo="diegokreutz" class="rounded-circle circle-bordered"
-										alt="">
+									<img src="cdn/img/team/without_photo.jpg" data-github-photo="diegokreutz"
+										class="rounded-circle circle-bordered" alt="">
 								</div>
 							</div>
 						</div>
@@ -355,8 +376,8 @@
 								title="Felipe Melchior<br />Colaborador">
 								<div class="hint hint-right">
 									<span class="hint-radius"></span>
-									<img src="cdn/img/team/without_photo.jpg" data-github-photo="homdreen" class="rounded-circle circle-bordered"
-										alt="">
+									<img src="cdn/img/team/without_photo.jpg" data-github-photo="homdreen"
+										class="rounded-circle circle-bordered" alt="">
 								</div>
 							</div>
 						</div>
@@ -377,8 +398,8 @@
 								title="Gustavo Satheler<br />Colaborador">
 								<div class="hint hint-right">
 									<span class="hint-radius"></span>
-									<img src="cdn/img/team/without_photo.jpg" data-github-photo="gustavosatheler" class="rounded-circle circle-bordered"
-										alt="">
+									<img src="cdn/img/team/without_photo.jpg" data-github-photo="satheler"
+										class="rounded-circle circle-bordered" alt="">
 								</div>
 							</div>
 						</div>
@@ -388,8 +409,8 @@
 								title="Michael Martins<br />Colaborador">
 								<div class="hint hint-right">
 									<span class="hint-radius"></span>
-									<img src="cdn/img/team/without_photo.jpg" data-github-photo="michaelmartins09" class="rounded-circle circle-bordered"
-										alt="">
+									<img src="cdn/img/team/without_photo.jpg" data-github-photo="michaelmartins09"
+										class="rounded-circle circle-bordered" alt="">
 								</div>
 							</div>
 						</div>
@@ -410,8 +431,8 @@
 								title='Gustavo "cr0d" Cardozo<br />Colaborador'>
 								<div class="hint hint-right">
 									<span class="hint-radius"></span>
-									<img src="cdn/img/team/without_photo.jpg" data-github-photo="gustavocrod" class="rounded-circle circle-bordered"
-										alt="">
+									<img src="cdn/img/team/without_photo.jpg" data-github-photo="gustavocrod"
+										class="rounded-circle circle-bordered" alt="">
 								</div>
 							</div>
 						</div>
@@ -492,7 +513,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="col-3 col-md-2 col-lg-1">
 							<div class="circle-double-bordered" data-toggle="tooltip" data-placement="top"
 								title="Amanda Guedes<br />Colaboradora">
@@ -597,8 +618,8 @@
 								title="Tadeu Jenuario<br />Colaborador">
 								<div class="hint hint-right">
 									<span class="hint-radius"></span>
-									<img src="cdn/img/team/without_photo.jpg" data-github-photo="Gnoario" class="rounded-circle circle-bordered"
-										alt="">
+									<img src="cdn/img/team/without_photo.jpg" data-github-photo="Gnoario"
+										class="rounded-circle circle-bordered" alt="">
 								</div>
 							</div>
 						</div>
@@ -630,8 +651,8 @@
 								title="Alex Camargo<br />Colaborador">
 								<div class="hint hint-right">
 									<span class="hint-radius"></span>
-									<img src="cdn/img/team/without_photo.jpg" data-github-photo="alexcamargoweb" class="rounded-circle circle-bordered"
-										alt="">
+									<img src="cdn/img/team/without_photo.jpg" data-github-photo="alexcamargoweb"
+										class="rounded-circle circle-bordered" alt="">
 								</div>
 							</div>
 						</div>
@@ -707,8 +728,8 @@
 								title="Gerson Antunes Soares<br />Colaborador">
 								<div class="hint hint-right">
 									<span class="hint-radius"></span>
-									<img src="cdn/img/team/gerson.antunes_soares.jpg" data-github-photo="" class="rounded-circle circle-bordered"
-										alt="">
+									<img src="cdn/img/team/gerson.antunes_soares.jpg" data-github-photo=""
+										class="rounded-circle circle-bordered" alt="">
 								</div>
 							</div>
 						</div>
@@ -1174,6 +1195,10 @@
 	<script src="cdn/vendor/typed/typed.min.js"></script>
 	<script src="cdn/vendor/particles.js/particles.min.js"></script>
 	<script src="cdn/vendor/axios/dist/axios.min.js"></script>
+	<script src="cdn/vendor/underscore/underscore-min.js"></script>
+	
+	<script src="cdn/vendor/timeago/jquery.timeago.min.js"></script>
+	<script src="cdn/vendor/timeago/jquery.timeago.pt-br.min.js"></script>
 
 	<!-- Custom scripts for this template -->
 	<script src="cdn/js/script.js"></script>
