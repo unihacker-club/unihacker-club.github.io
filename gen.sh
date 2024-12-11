@@ -1,4 +1,4 @@
-while read NAME
+while read NOME
 do
     echo "<div class=\"team-member\">"
     echo "    <div class=\"circle-double-bordered\">"
