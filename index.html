@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,17 +20,33 @@
             text-align: center;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        header img {
+            max-width: 200px;
+            margin: 0 auto;
         }
 
-        header p {
-            margin: 0;
-            font-size: 1.2rem;
+        nav {
+            background-color: #004d24;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
         }
 
-        main {
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #006837;
+        }
+
+        section {
             max-width: 800px;
             margin: 2rem auto;
             padding: 1rem;
@@ -39,27 +55,34 @@
             border-radius: 8px;
         }
 
-        main h2 {
-            color: #007A33;
-            font-size: 2rem;
-            margin-top: 0;
-        }
-
-        main p {
-            font-size: 1rem;
-            margin: 1rem 0;
-        }
-
         footer {
             text-align: center;
             padding: 1rem;
             background-color: #007A33;
             color: white;
-            margin-top: 2rem;
         }
 
         footer a {
             color: #f9f9f9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .ebook {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .ebook img {
+            max-width: 120px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .ebook a {
+            color: #007A33;
             text-decoration: none;
             font-weight: bold;
         }
@@ -68,22 +91,66 @@
 <body>
 
 <header>
+    <img src="https://unihacker-club.github.io/images/UniHacker_Logo_white.png" alt="Logo UniHacker.Club">
     <h1>UniHacker.Club</h1>
-    <p>Explorando a tecnologia, segurança e inovação.</p>
 </header>
 
-<main>
-    <h2>Sobre o Programa</h2>
-    <p>O UniHacker.Club é um programa dedicado a explorar e aprofundar conhecimentos em segurança da informação, promovendo eventos, workshops, treinamentos e competições que envolvem profissionais da indústria e academia.</p>
+<nav>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#proposta">Proposta</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#parceiros">Parceiros</a>
+    <a href="#publicacoes">Publicações</a>
+    <a href="#novidades">Novidades</a>
+</nav>
 
-    <h2>Missão</h2>
-    <p>Promover a conscientização, inovação e colaboração no campo da cibersegurança, conectando comunidades e preparando as futuras gerações para os desafios tecnológicos.</p>
+<section id="objetivos">
+    <h2>Objetivos</h2>
+    <p>O UniHacker.Club visa promover o aprendizado, inovação e colaboração na área de segurança da informação, abordando:</p>
+    <ul>
+        <li>Elaboração de material didático e oferta de workshops;</li>
+        <li>Diagnóstico de problemas de segurança;</li>
+        <li>Desenvolvimento de soluções computacionais inovadoras;</li>
+        <li>Integração da universidade ao contexto regional;</li>
+        <li>Conscientização sobre inclusão digital e cultura hacker.</li>
+    </ul>
+</section>
 
-    <h2>Contato</h2>
-    <p>Para saber mais, entre em contato conosco em <a href="mailto:contact@unihacker.club">contact@unihacker.club</a>.</p>
-</main>
+<section id="proposta">
+    <h2>Proposta</h2>
+    <p>O programa busca capacitar profissionais, estudantes e a comunidade em geral por meio de ações abrangentes, como treinamentos, desenvolvimento de soluções, campanhas de conscientização e hackathons, promovendo impacto positivo na sociedade.</p>
+</section>
+
+<section id="equipe">
+    <h2>Equipe</h2>
+    <p>Conheça os líderes do programa:</p>
+    <ul>
+        <li>Diego Kreutz (<a href="http://lattes.cnpq.br/2781747995973774" target="_blank">Lattes</a>, <a href="https://scholar.google.com/citations?user=JcL8biEAAAAJ" target="_blank">Google Scholar</a>)</li>
+        <li>Érico Marcelo Hoff do Amaral (<a href="http://lattes.cnpq.br/2530535838251633" target="_blank">Lattes</a>, <a href="https://scholar.google.com/citations?user=9cDt4skAAAAJ" target="_blank">Google Scholar</a>)</li>
+        <li>Roben Castagna Lunardi (<a href="http://lattes.cnpq.br/1243090119249735" target="_blank">Lattes</a>, <a href="https://scholar.google.com/citations?user=PTMGNKIAAAAJ" target="_blank">Google Scholar</a>)</li>
+        <li>Ewerton R. Andrade (<a href="http://lattes.cnpq.br/9038113331816861" target="_blank">Lattes</a>, <a href="https://scholar.google.com/citations?user=c1zh1wwAAAAJ" target="_blank">Google Scholar</a>)</li>
+    </ul>
+</section>
+
+<section id="publicacoes">
+    <h2>Publicações</h2>
+    <div class="ebook">
+        <img src="https://unihacker-club.github.io/images/UniHacker_Ebook1_capa.png" alt="Capa Ebook 1">
+        <a href="https://unihacker-club.github.io/files/unihacker_ebook_1.pdf" target="_blank">Download Ebook 1</a>
+    </div>
+    <div class="ebook">
+        <img src="https://unihacker-club.github.io/images/UniHacker_Ebook2_capa.png" alt="Capa Ebook 2">
+        <a href="https://unihacker-club.github.io/files/unihacker_ebook_2.pdf" target="_blank">Download Ebook 2</a>
+    </div>
+</section>
+
+<section id="novidades">
+    <h2>Novidades</h2>
+    <p>Fique por dentro das últimas notícias e eventos do programa UniHacker.Club.</p>
+</section>
 
 <footer>
+    <p>Contato: <a href="mailto:unihackerclub@gmail.com">unihackerclub@gmail.com</a></p>
     <p>&copy; 2024 UniHacker.Club. Todos os direitos reservados.</p>
 </footer>
 
