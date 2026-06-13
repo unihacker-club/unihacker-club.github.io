@@ -1,161 +1,314 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniHacker.Club</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #4D4D4D;
-            background-color: #f9f9f9;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniHacker.Club — Segurança da informação, inovação e cultura hacker</title>
+  <meta name="description" content="Programa de extensão universitária que promove aprendizado, inovação e colaboração em segurança da informação: workshops, material didático, hackathons e conscientização digital.">
+  <meta name="theme-color" content="#007a33">
 
-        header {
-            background-color: #007A33;
-            color: white;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UniHacker.Club">
+  <meta property="og:description" content="Aprendizado, inovação e colaboração em segurança da informação e cultura hacker.">
+  <meta property="og:image" content="https://unihacker-club.github.io/img/UniHacker_Logo_white.png">
+  <meta property="og:url" content="https://unihacker-club.github.io/">
 
-        header img {
-            max-width: 200px;
-            margin: 0 auto;
-        }
+  <link rel="icon" href="img/UniHacker_Logo_white.png">
 
-        nav {
-            background-color: #004d24;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #006837;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #007A33;
-            color: white;
-        }
-
-        footer a {
-            color: #f9f9f9;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .ebook {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 1rem;
-        }
-
-        .ebook img {
-            max-width: 120px;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .ebook a {
-            color: #007A33;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-
 <body>
 
-<header>
-    <img src="https://unihacker-club.github.io/img/UniHacker_Logo_white.png" alt="Logo UniHacker.Club">
-    <h1>UniHacker.Club</h1>
+<!-- ===================== Header ===================== -->
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="#top" aria-label="UniHacker.Club — início">
+      <span class="brand__chip"><img src="img/UniHacker_Logo_white.png" alt=""></span>
+      <span>Uni<b>Hacker</b>.Club<small>Segurança · Inovação</small></span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Principal">
+      <a href="#objetivos">Objetivos</a>
+      <a href="#proposta">Proposta</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#ebooks">Ebooks</a>
+      <a class="btn" href="#contato">Fale conosco</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-    <a href="#objetivos">Objetivos</a>
-    <a href="#proposta">Proposta</a>
-    <a href="#equipe">Equipe</a>
-    <a href="#ebooks">Ebooks</a>
-</nav>
+<main id="top">
 
-<section id="objetivos">
-    <h2>Objetivos</h2>
-    <p>O UniHacker.Club visa promover o aprendizado, inovação e colaboração na área de segurança da informação, abordando:</p>
-    <ul>
-        <li>Elaboração de material didático e oferta de workshops;</li>
-        <li>Diagnóstico de problemas de segurança;</li>
-        <li>Desenvolvimento de soluções computacionais inovadoras;</li>
-        <li>Integração da universidade ao contexto regional;</li>
-        <li>Conscientização sobre inclusão digital e cultura hacker.</li>
-    </ul>
-</section>
+  <!-- ===================== Hero ===================== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="hero__badge" data-reveal><span class="dot"></span>Programa de extensão universitária</span>
+        <h1 data-reveal data-reveal-delay="1">
+          Cultura hacker a serviço da <span class="grad">segurança digital</span>.
+        </h1>
+        <p class="hero__lead" data-reveal data-reveal-delay="2">
+          O UniHacker.Club promove aprendizado, inovação e colaboração em segurança
+          da informação — conectando a universidade à comunidade por meio de
+          workshops, soluções tecnológicas e conscientização.
+        </p>
+        <div class="hero__cta" data-reveal data-reveal-delay="3">
+          <a class="btn" href="#proposta">
+            Conheça a proposta
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#ebooks">Baixar ebooks</a>
+        </div>
+      </div>
 
-<section id="proposta">
-    <h2>Proposta</h2>
-    <p>O programa busca capacitar profissionais, estudantes e a comunidade em geral por meio de ações abrangentes, como treinamentos, desenvolvimento de soluções, campanhas de conscientização e hackathons, promovendo impacto positivo na sociedade.</p>
-</section>
-
-<section id="equipe">
-    <h2>Equipe</h2>
-    <p>Conheça os líderes do programa:</p>
-    <ul>
-        <li>Diego Kreutz (<a href="http://lattes.cnpq.br/2781747995973774" target="_blank">Lattes</a>, <a href="https://scholar.google.com/citations?user=JcL8biEAAAAJ" target="_blank">Google Scholar</a>)</li>
-        <li>Érico Marcelo Hoff do Amaral (<a href="http://lattes.cnpq.br/2530535838251633" target="_blank">Lattes</a>, <a href="https://scholar.google.com/citations?user=9cDt4skAAAAJ" target="_blank">Google Scholar</a>)</li>
-        <li>Roben Castagna Lunardi (<a href="http://lattes.cnpq.br/1243090119249735" target="_blank">Lattes</a>, <a href="https://scholar.google.com/citations?user=PTMGNKIAAAAJ" target="_blank">Google Scholar</a>)</li>
-        <li>Ewerton R. Andrade (<a href="http://lattes.cnpq.br/9038113331816861" target="_blank">Lattes</a>, <a href="https://scholar.google.com/citations?user=c1zh1wwAAAAJ" target="_blank">Google Scholar</a>)</li>
-    </ul>
-    <br>
-
-    <a href="https://unihacker-club.github.io/equipe.html" target="_blank">Confira a relação dos colaboradores do UniHacker.Club</a>
-
-    <br>
-    <br>
-</section>
-
-<section id="ebooks">
-    <h2>Ebooks</h2>
-
-    <div class="ebook">
-        <img src="https://unihacker-club.github.io/img/UniHacker_Ebook1_capa.png" alt="Capa Ebook 1">
-        <a href="https://unihacker-club.github.io/files/unihacker_ebook_1.pdf" target="_blank">Download Ebook 1</a>
+      <div class="terminal" data-reveal data-reveal-delay="2" aria-hidden="true">
+        <div class="terminal__bar"><i></i><i></i><i></i><span>unihacker@club: ~</span></div>
+        <div class="terminal__body">
+          <div class="terminal__prompt"><span class="c-key">whoami</span></div>
+          <div><span class="c-str">"comunidade de segurança da informação"</span></div>
+          <div class="terminal__prompt"><span class="c-key">cat</span> missao.txt</div>
+          <div class="c-com"># aprender · proteger · inovar · compartilhar</div>
+          <div class="terminal__prompt"><span class="c-key">run</span> --workshops --hackathons<span class="terminal__caret"></span></div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="ebook">
-        <img src="https://unihacker-club.github.io/img/UniHacker_Ebook2_capa.png" alt="Capa Ebook 2">
-        <a href="https://unihacker-club.github.io/files/unihacker_ebook_2.pdf" target="_blank">Download Ebook 2</a>
+  <!-- ===================== Stats ===================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="stats" data-reveal>
+        <div class="stat"><div class="stat__num"><span data-count="83">83</span></div><div class="stat__label">Integrantes na rede</div></div>
+        <div class="stat"><div class="stat__num"><span data-count="4">4</span></div><div class="stat__label">Coordenadores e líderes</div></div>
+        <div class="stat"><div class="stat__num"><span data-count="5">5</span></div><div class="stat__label">Eixos de atuação</div></div>
+        <div class="stat"><div class="stat__num"><span data-count="2">2</span></div><div class="stat__label">Ebooks gratuitos</div></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer>
-    <p>Contato: <a href="mailto:unihackerclub@gmail.com">unihackerclub@gmail.com</a></p>
-    <p>&copy; 2024 UniHacker.Club. Todos os direitos reservados.</p>
+  <!-- ===================== Objetivos ===================== -->
+  <section class="section" id="objetivos">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">// objetivos</span>
+        <h2>O que nos move</h2>
+        <p>Promover aprendizado, inovação e colaboração na área de segurança da informação, em cinco frentes complementares.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card" data-reveal>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>Material e workshops</h3>
+          <p>Elaboração de material didático e oferta de workshops práticos para todos os níveis.</p>
+        </article>
+        <article class="card" data-reveal data-reveal-delay="1">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Diagnóstico de segurança</h3>
+          <p>Identificação e diagnóstico de problemas e vulnerabilidades de segurança.</p>
+        </article>
+        <article class="card" data-reveal data-reveal-delay="2">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></div>
+          <h3>Soluções inovadoras</h3>
+          <p>Desenvolvimento de soluções computacionais inovadoras para problemas reais.</p>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>Integração regional</h3>
+          <p>Integração da universidade ao contexto regional e suas demandas.</p>
+        </article>
+        <article class="card" data-reveal data-reveal-delay="1">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Inclusão digital</h3>
+          <p>Conscientização sobre inclusão digital e difusão da cultura hacker ética.</p>
+        </article>
+        <article class="card card--cta" data-reveal data-reveal-delay="2" style="display:flex;flex-direction:column;justify-content:center;background:var(--green-50);border-color:var(--green-100)">
+          <h3 style="color:var(--green-700)">Faça parte</h3>
+          <p>Estudantes, profissionais e comunidade são bem-vindos.</p>
+          <a class="btn btn--ghost" href="#contato" style="margin-top:1rem;align-self:flex-start">Quero participar</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Proposta ===================== -->
+  <section class="section" id="proposta">
+    <div class="container feature">
+      <div class="feature__copy" data-reveal>
+        <span class="eyebrow">// proposta</span>
+        <h2 style="font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;line-height:1.05;color:var(--ink-900);font-size:clamp(1.9rem,1.2rem + 2.8vw,3rem);margin-top:.8rem">Capacitar pessoas e gerar impacto</h2>
+        <p style="margin-top:1rem;color:var(--ink-500);font-size:1.075rem">
+          O programa busca capacitar profissionais, estudantes e a comunidade em geral
+          por meio de ações abrangentes, promovendo impacto positivo na sociedade.
+        </p>
+        <div class="hero__cta" style="margin-top:1.75rem">
+          <a class="btn" href="#equipe">Conheça a equipe</a>
+        </div>
+      </div>
+
+      <div class="feature__panel" data-reveal data-reveal-delay="1">
+        <ul class="feature__list">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Treinamentos</b><br><span>Capacitação técnica contínua em segurança.</span></span></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Desenvolvimento de soluções</b><br><span>Ferramentas e sistemas para problemas reais.</span></span></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Campanhas de conscientização</b><br><span>Educação digital para a comunidade.</span></span></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Hackathons</b><br><span>Maratonas de inovação colaborativa.</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Equipe (liderança) ===================== -->
+  <section class="section" id="equipe">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">// equipe</span>
+        <h2>Liderança do programa</h2>
+        <p>Pesquisadores que coordenam as ações do UniHacker.Club.</p>
+      </div>
+
+      <div class="leaders">
+        <article class="leader" data-reveal>
+          <div class="avatar"><img src="img/team/diego_kreutz.webp" alt="Diego Kreutz"></div>
+          <h3>Diego Kreutz</h3>
+          <div class="role">Coordenador</div>
+          <div class="leader__links">
+            <a href="http://lattes.cnpq.br/2781747995973774" target="_blank" rel="noopener">Lattes</a>
+            <a href="https://scholar.google.com/citations?user=JcL8biEAAAAJ" target="_blank" rel="noopener">Scholar</a>
+          </div>
+        </article>
+        <article class="leader" data-reveal data-reveal-delay="1">
+          <div class="avatar"><img src="img/team/erico_amaral.jpg" alt="Érico Marcelo Hoff do Amaral"></div>
+          <h3>Érico M. H. do Amaral</h3>
+          <div class="role">Co-coordenador</div>
+          <div class="leader__links">
+            <a href="http://lattes.cnpq.br/2530535838251633" target="_blank" rel="noopener">Lattes</a>
+            <a href="https://scholar.google.com/citations?user=9cDt4skAAAAJ" target="_blank" rel="noopener">Scholar</a>
+          </div>
+        </article>
+        <article class="leader" data-reveal data-reveal-delay="2">
+          <div class="avatar">RL</div>
+          <h3>Roben Castagna Lunardi</h3>
+          <div class="role">Líder</div>
+          <div class="leader__links">
+            <a href="http://lattes.cnpq.br/1243090119249735" target="_blank" rel="noopener">Lattes</a>
+            <a href="https://scholar.google.com/citations?user=PTMGNKIAAAAJ" target="_blank" rel="noopener">Scholar</a>
+          </div>
+        </article>
+        <article class="leader" data-reveal data-reveal-delay="3">
+          <div class="avatar">EA</div>
+          <h3>Ewerton R. Andrade</h3>
+          <div class="role">Líder</div>
+          <div class="leader__links">
+            <a href="http://lattes.cnpq.br/9038113331816861" target="_blank" rel="noopener">Lattes</a>
+            <a href="https://scholar.google.com/citations?user=c1zh1wwAAAAJ" target="_blank" rel="noopener">Scholar</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem" data-reveal>
+        <a class="btn btn--ghost" href="equipe.html">
+          Ver todos os colaboradores
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Ebooks ===================== -->
+  <section class="section" id="ebooks">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">// ebooks</span>
+        <h2>Materiais gratuitos</h2>
+        <p>Conteúdo produzido pela comunidade, disponível para download livre.</p>
+      </div>
+
+      <div class="ebooks">
+        <article class="ebook" data-reveal>
+          <img class="ebook__cover" src="img/UniHacker_Ebook1_capa.png" alt="Capa do Ebook 1 do UniHacker.Club" width="130">
+          <div>
+            <h3>UniHacker Ebook · Vol. 1</h3>
+            <p>Fundamentos e práticas iniciais em segurança da informação.</p>
+            <a class="btn" href="files/unihacker_ebook_1.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download
+            </a>
+          </div>
+        </article>
+        <article class="ebook" data-reveal data-reveal-delay="1">
+          <img class="ebook__cover" src="img/UniHacker_Ebook2_capa.png" alt="Capa do Ebook 2 do UniHacker.Club" width="130">
+          <div>
+            <h3>UniHacker Ebook · Vol. 2</h3>
+            <p>Aprofundamento em técnicas e cultura hacker ética.</p>
+            <a class="btn" href="files/unihacker_ebook_2.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="cta" data-reveal>
+        <span class="eyebrow" style="color:#bdf5d1;justify-content:center">// contato</span>
+        <h2>Vamos construir uma comunidade mais segura?</h2>
+        <p>Tem interesse em participar, propor parcerias ou tirar dúvidas? Fale com a gente.</p>
+        <div class="cta__actions">
+          <a class="btn btn--light" href="mailto:unihackerclub@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+            unihackerclub@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== Footer ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="foot-brand"><img src="img/UniHacker_Logo_white.png" alt="UniHacker.Club"></div>
+      <p style="max-width:34ch;color:#9fc3ad">Aprendizado, inovação e colaboração em segurança da informação e cultura hacker.</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul class="foot-links">
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#proposta">Proposta</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="equipe.html">Colaboradores</a></li>
+        <li><a href="#ebooks">Ebooks</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul class="foot-links">
+        <li><a href="mailto:unihackerclub@gmail.com">unihackerclub@gmail.com</a></li>
+        <li><a href="files/unihacker_ebook_1.pdf" target="_blank" rel="noopener">Ebook Vol. 1</a></li>
+        <li><a href="files/unihacker_ebook_2.pdf" target="_blank" rel="noopener">Ebook Vol. 2</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>&copy; <span id="year">2025</span> UniHacker.Club</span>
+    <span>Todos os direitos reservados.</span>
+  </div>
 </footer>
 
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
